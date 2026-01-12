@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+/*Paleta de cores
+    cor0 - #7896AC
+    cor1 - #84C7F0
+    cor2 - #5DBFFC
+    cor3 - #2BAEFF
+    cor4 - #037DC8
+*/
+:root {
+    --cor0: #7896AC;
+    --cor1: #84C7F0;
+    --cor2: #5DBFFC;
+    --cor3: #2BAEFF;
+    --cor4: #037DC8;
+
+    --titulo: 'Playfair Display', cursive;
+    --subtitulo: 'Cinzel', cursive;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--cor1);
+    text-align: center;
+}
+header {
+    background-color: var(--cor4);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.514);
+    margin-bottom: 2px;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.589);
+    border-radius: 0px 0px 10px 10px;
+    min-height: 700px;
+}
+main h1 {
+    font-family: var(--titulo);
+    margin: auto;
+    max-width: 500px;
+    padding: 5px 10px;
+}
+
+main h2 {
+    font-family: var(--subtitulo);
+    padding: 10px;
+    
+}
+main h3 {
+    font-family: var(--subtitulo);
+    padding: 10px;
+}
+main div#semestre {
+    max-width: 500px;
+    background-color: var(--cor1);
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+    height: 100%;
+}
+main div#semestre a {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor3);
+    padding: 10px;
+    transition-duration: 0.3s;
+}
+main div#semestre a:hover {
+    color: black;
+    font-weight: bolder;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.644);
+}
+main aside {
+    background-color: var(--cor2);
+    width: 30%;
+    margin: auto;
+    margin-top: 314px;
+    border-radius: 8px 8px 0px 0px;
+}
+main aside h3 {
+    background-color: var(--cor4);
+    padding: 4px;
+    color: white;
+    border-radius: 8px 8px 0px 0px;
+    font-size: 1em;
+}
+main aside ul {
+    padding: 10px;
+    list-style-type: none;
+}
+main aside ul > li {
+    margin: 5px 0px;
+}
+main aside a {
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 4px 1px;
+    color: black;
+    transition-duration: 0.3s;
+}
+main aside a:hover {
+    color: white;
+    text-decoration: underline;
+}
+main aside img {
+    margin-bottom: -6px;
+}
+main div#materias {
+    background-color: var(--cor2);
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+main div#materias ul {
+    padding: 10px;
+    list-style-type: none;
+}
+main div#materias ul > li {
+    margin: 5px 0px;
+    padding: 10px 0px;
+    font-size: 1.1em;
+}
+main div#materias a {
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 4px 1px;
+    color: black;
+    transition-duration: 0.3s;
+}
+main div#materias a:hover {
+    color: white;
+    text-decoration: underline;
+}
+main div.video {
+    position: relative;
+    background-color: var(--cor2);
+    border-radius: 12px;
+    margin: 10px 20px;
+    padding: 10px;
+    padding-bottom: 55%;
+}
+main div.video h2 {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor4);
+    color: white;
+    border-radius: 12px 12px 0px 0px;
+    margin: -10px;
+}
+main div.video iframe {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+main .voltar {
+    padding: 10px;
+    font-weight: bold;
+}
+main .voltar a {
+    text-decoration: none;
+    color: black;
+}
+main .voltar a::before {
+    content: '\1F519';
+}
+main .voltar a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+main p {
+    font-size: 1.3em;
+    max-width: 500px;
+    margin: auto;
+    font-family: var(--fonte-padrao);
+}
+main img {
+    transition-duration: 0.2s;
+}
+main img:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.541);
+}
+footer {
+    background-color: #015081;
+    padding: 5px;
+    margin-top: 5px;
+}
+footer p {
+    color: white;
+    font-size: 0.8em;
+}
